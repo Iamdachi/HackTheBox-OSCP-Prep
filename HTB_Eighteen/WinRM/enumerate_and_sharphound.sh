@@ -1,4 +1,4 @@
-!# /bin/bash
+#! /bin/bash
 
 # Enumerate Windows Host: run native Windows commands or PowerShell expressions
 

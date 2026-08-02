@@ -1,4 +1,4 @@
-!# /bin/bash
+#! /bin/bash
 
 # Port scanning
 sudo nmap -p- -vvv --min-rate 10000 10.129.21.40

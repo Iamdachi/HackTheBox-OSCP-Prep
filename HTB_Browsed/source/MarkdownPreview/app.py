@@ -26,10 +26,15 @@ def list_files():
 # /files shows a page that displays the saved HTML files.
 #...[snip]...
 
+
 @app.route('/routines/<rid>')
 def routines(rid):
-#/routines/<rid> calls a shell script, routines.sh, with the given rid as its input.
-#...[snip]...
+    # Call the script that manages the routines
+    # Run bash script with the input as an argument (NO shell)
+    subprocess.run(["./routines.sh", rid])
+    # ME: command output is not returned, so in SSRF you have to ping yourself to make sure POC works
+    return "Routine executed !"
+
 
 @app.route('/view/<filename>')
 def view_file(filename):

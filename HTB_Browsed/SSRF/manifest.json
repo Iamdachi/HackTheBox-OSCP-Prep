@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Read Localhost port 5000",
+  "version": "1.0.0",
+  "description": "Grab the page on localhost:5000 and return it to me.",
+  "permissions": ["scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
+
